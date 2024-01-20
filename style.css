@@ -1,0 +1,148 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+</style>
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family:italic;
+	font-family:'Roboto';
+}
+
+nav
+{
+	height:80px;
+	background:#000;
+	width:100%;
+	
+
+}
+nav .container
+{
+	margin:0 auto;
+	max-width:1100px;
+	
+}
+nav .navbar
+{
+	display:flex;
+	justify-content:space-between;
+	align-item:center;
+	padding:0 20px 0 50px;
+	height:100%;
+	
+	text-decoration:none;
+}
+nav .logo a
+{
+	font-size:30px;
+	color:#fff;
+	font-weight:700;
+	text-decoration:none;
+}
+nav .logo{
+	height:10px;
+	
+}
+	
+
+nav .menu ul
+{
+	display:flex;
+}
+nav .menu ul li{
+	list-style:none;
+	margin:0 10px;
+}
+nav .menu lighter{
+	list-style:none;
+	margin:0 20px;
+}
+nav .menu ul li a
+{
+	text-decoration:none;
+	font-size:18px;
+	color:#fff;
+	font-weight:400;
+	transition:all 500ms;
+	
+}
+
+nav .menu ul li a:hover
+{
+	padding:7px;
+	background:#fff;
+	color:#000;
+	border:none;
+	outline:none;
+	border-radius:5px;
+	font-weight:300;
+	letter-spacing:2px;
+}
+label i 
+{
+	color:#fff;
+	font-size:20px;
+}
+#checking{
+	display:none;
+}
+label
+{
+	display:none;
+}
+label .home{
+	display:flex;
+	margin:20px;
+	padding:20px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  nav{
+	  background-color:green;
+	  height:80px;
+  }
+  nav .menu ul{
+		position:fixed;
+		top:80px;
+		left:-100vh;
+		background:#333;
+		height:100vh;
+		width:100%;
+		display:block;
+		text-align:center;
+		color:red;
+		transition:all 500ms;
+  }
+  nav .menu ul li {
+		margin:30px;
+	}
+	nav .menu ul li a{
+		font-size:23px;
+	}
+	nav .menu ul li a:hover{
+	padding:unset;
+	background:unset;
+	color:cyan;
+	border:unset;
+	outline:unset;
+	border-radius:unset;
+	font-weight:unset;
+	}
+#checking:checked ~ul{
+	left:0%;
+}
+#checking:checked ~label i ::befor{
+	content:"\f2d3";
+}
+label
+{
+	display:block;
+}
+
+}
+
